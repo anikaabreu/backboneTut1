@@ -14,11 +14,31 @@
         <script src="js/lib/modernizr-2.6.2.min.js"></script>
     </head>
     <body>
+        <div id="container"></div>
+        <div id="container1"></div>
+        <div id="container2"></div>
+        <div id="container3"></div>
+        <div id="container4"></div>
+        <div id="container5"></div>
+        <div id="container6"></div>
+        <div id="container7"></div>
+        <div id="container8"></div>
+        <div id="container9"></div>
 
-       Simpleshow Framework Test
+  
         <script src="js/lib/jquery-min.js"></script>
         <script src="js/lib/underscore-min.js"></script>
         <script src="js/lib/backbone-min.js"></script>
-        <script src="js/main.js"></script>
+        <!-- <script src="js/main.js"></script> -->
+        <!-- <script src="js/viewsModelsCollections.js"></script> -->
+        <script id="songTemplate" type="text/html">
+        <%= title %>
+        <button>Listen</button>
+        <% if (plays > 100) { %>
+            <span class="popular">Popular</span>
+        <% } %>
+        </script>
+        <script src="js/viewsTemplates.js"></script>
+        <script src="js/Events.js"></script>
     </body>
 </html>
